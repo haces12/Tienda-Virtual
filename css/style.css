@@ -1,0 +1,426 @@
+/* Estilos para el modo claro */
+body {
+    padding-top: 20px;
+    background-color: #f8f9fa;
+}
+/* Estilos de la barra de busqueda*/
+.search-bar {
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.search-bar:hover{
+    transform: translateY(-10px);
+}
+.search-bar .input-group {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+
+.search-bar .btn-primary {
+    background-color: #4361ee;
+    border-color: #4361ee;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+/* Estilos para la barra lateral */
+.sidebar {
+    border-color: #0d6efd;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 280px;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    z-index: 1000;
+}
+.sidebar:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.dropdown-option {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-option:hover {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
+.content {
+    margin-left: 320px;
+    padding: 20px;
+}
+/* Estilos para los modales*/
+.modal-content {
+    transition: all 0.3s ease;
+  }
+  :root {
+    --modal-bg: #fff;
+    --modal-header-bg: #f8f9fa;
+    --modal-text: #212529;
+    --modal-text-muted: #6c757d;
+    --modal-border: rgba(0,0,0,0.1);
+    --modal-category-bg: rgba(13,110,253,0.1);
+    --modal-category-text: #0d6efd;
+    --modal-button-bg: #0d6efd;
+    --modal-button-text: #fff;
+    --modal-quantity-bg: #f8f9fa;
+  }
+.product-card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    height: 100%;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.product-img {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+}
+.price-tag {
+    font-weight: bold;
+    color: #0d6efd;
+    font-size: 1.2rem;
+}
+.filter-section {
+    margin-bottom: 4.5rem;
+}
+.filter-title {
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    color: #495057;
+    font-size: 1.1rem;
+}
+.filter-option {
+    display: block;
+    padding: 8px 0;
+    color: #495057;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.filter-option:hover, .filter-option.active {
+    color: #0d6efd;
+}
+.search-box {
+    margin-bottom: 20px;
+}
+.btn-language {
+    border-radius: 0;
+}
+.btn-language:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.btn-language:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.product-img {
+    height: 220px;
+    object-fit: contain;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.15);
+}
+/* Estilos para el carrito */
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.cart-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.4);
+}
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 30px rgba(0,0,0,0.1);
+    z-index: 1050;
+    padding: 25px;
+    overflow-y: auto;
+}
+.cart-item-quantity {
+    width: 50px;
+    text-align: center;
+}
+.quantity-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.cart-empty-message {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+.btn-add-to-cart:hover {
+    background-color: #3a56d4;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #2d3748;
+    color: #ffffff;
+}
+
+.dark-mode .sidebar {
+    background-color: #1a202c;
+    color: #ffffff;
+}
+
+.dark-mode .product-card {
+    background-color: #1a202c;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .product-card:hover {
+    box-shadow: 0 10px 20px rgba(131, 126, 126, 0.2);
+}
+
+.dark-mode .price-tag {
+    color: #4dabf7;
+}
+/* Estilos para el search bar en modo oscuro */
+.dark-mode .search-bar .form-control {
+    background-color: #1a202c;
+    color: #ffffff;
+    border-color: #4a5568;
+}
+
+.dark-mode .search-bar .form-control:focus {
+    background-color: #1a202c;
+    color: #ffffff;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 0.25rem rgba(77, 171, 247, 0.25);
+}
+.dark-mode #searchInput::placeholder {
+    color: #a0aec0 !important;
+    font-weight: 400;
+}
+.dark-mode .filter-option {
+    color: #e0e0e0;
+}
+
+.dark-mode .filter-option:hover {
+    color: #4dabf7;
+}
+/* Estilos para los modales en modo oscuro */
+  .dark-mode .modal-content {
+    background: #2d3748;
+    color: #f8f9fa;
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+    background: #1a202c;
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .image-container {
+    background: #1a202c;
+}
+
+.dark-mode .modal-title {
+    color: #e2e8f0;
+}
+
+.dark-mode .price {
+    color: #e2e8f0;
+}
+
+.dark-mode .text-muted {
+    color: #e3e6e9 !important;
+}
+
+.dark-mode .btn-outline-secondary {
+    border-color: #4a5568;
+    color: #e2e8f0;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #4a5568;
+    color: white;
+}
+
+.dark-mode .bg-light {
+    background-color: #1a202c !important;
+}
+
+.dark-mode .bg-white {
+    background-color: #2d3748 !important;
+}
+
+.dark-mode .text-dark {
+    color: #f8f9fa !important;
+}
+
+.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+
+.dark-mode .cart-modal {
+    background-color: #1a202c;
+    color: #ffffff;
+}
+/* Estilos para la barra lateral en modo oscuro */
+.dark-mode .sidebar {
+    background-color: #1a202c;
+    color: #ffffff;
+}
+
+.dark-mode .filter-title {
+    color: #e2e8f0 !important;
+}
+
+.dark-mode .dropdown-toggle {
+    color: #e2e8f0 !important;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #555;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+}
+
+.dark-mode .dropdown-option{
+    color: white;
+}
+.dark-mode .dropdown-item {
+    color: #e2e8f0 !important;
+}
+.dark-mode .dropdown-option:hover {
+    background-color: #1a202c !important; 
+    color: white !important; 
+}
+
+.dark-mode .dropdown-header {
+    color: #aaaaaa;
+}
+.dark-mode .dropdown-divider {
+    border-color: #555;
+}
+/* Estilos para las alertas en modo oscuro */
+.dark-mode .swal2-popup {
+    background: #1a202c;
+    color: #fff;
+}
+
+.dark-mode .swal2-title {
+    color: #fff;
+}
+
+.dark-mode .swal2-content {
+    color: #e0e0e0;
+}
+
+.dark-mode .swal2-close {
+    color: #aaa;
+}
+
+.dark-mode .swal2-styled {
+    color: white;
+}
+
+.dark-mode .swal2-confirm {
+    background-color: #4dabf7 !important;
+}
+
+.dark-mode .swal2-cancel {
+    background-color: #f27474 !important;
+}
+/* Estilos para responsive web */
+@media (max-width: 992px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
